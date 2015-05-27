@@ -19,117 +19,145 @@ public class Tegel {
     private Tegel prev; // last room pointer
     
     //Getter / Setter
-    public void setRoomName(int roomName) {
+    public void setRoomName(int roomName) 
+    {
         this.roomName = roomName;
     }
     
-    public List<Tegel> getBuren() {
+    public List<Tegel> getBuren()
+    {
         return buren;
     }
 
-    public Tegel getTegelE() {
+    public Tegel getTegelE() 
+    {
         return tegelE;
     }
 
-    public void setTegelE(Tegel tegelE) {
+    public void setTegelE(Tegel tegelE)
+    {
         this.tegelE = tegelE;
     }
 
-    public Tegel getTegelN() {
+    public Tegel getTegelN() 
+    {
         return tegelN;
     }
 
-    public void setTegelN(Tegel tegelN) {
+    public void setTegelN(Tegel tegelN)
+    {
         this.tegelN = tegelN;
     }
 
-    public Tegel getTegelS() {
+    public Tegel getTegelS()
+    {
         return tegelS;
     }
 
-    public void setTegelS(Tegel tegelS) {
+    public void setTegelS(Tegel tegelS)
+    {
         this.tegelS = tegelS;
     }
 
-    public Tegel getWestBuur() {
+    public Tegel getWestBuur() 
+    {
         return tegelW;
     }
 
-    public void setWestBuur(Tegel westBuur) {
+    public void setWestBuur(Tegel westBuur)
+    {
         this.tegelW = westBuur;
     }
 
-    public void setburen(List<Tegel> buren) {
+    public void setburen(List<Tegel> buren)
+    {
         this.buren = buren;
     }
 
-    public Muur getMuurE() {
+    public Muur getMuurE()
+    {
         return muurE;
     }
 
-    public void setMuurE(Muur muurE) {
+    public void setMuurE(Muur muurE) 
+    {
         this.muurE = muurE;
     }
 
-    public Muur getMuurN() {
+    public Muur getMuurN() 
+    {
         return muurN;
     }
 
-    public void setMuurN(Muur muurN) {
+    public void setMuurN(Muur muurN)
+    {
         this.muurN = muurN;
     }
 
-    public Tegel getPrev() {
+    public Tegel getPrev()
+    {
         return prev;
     }
 
-    public void setPrev(Tegel prev) {
+    public void setPrev(Tegel prev)
+    {
         this.prev = prev;
     }
 
-    public Muur getSouth() {
+    public Muur getSouth()
+    {
         return muurS;
     }
 
-    public void setSouth(Muur south) {
+    public void setSouth(Muur south) 
+    {
         this.muurS = south;
     }
 
-    public Muur getWest() {
+    public Muur getWest()
+    {
         return muurW;
     }
 
-    public void setWest(Muur west) {
+    public void setWest(Muur west)
+    {
         this.muurW = west;
     }
 
-    public int getX() {
+    public int getX()
+    {
         return x;
     }
 
-    public void setX(int x) {
+    public void setX(int x)
+    {
         this.x = x;
     }
 
-    public int getY() {
+    public int getY()
+    {
         return y;
     }
 
-    public void setY(int y) {
+    public void setY(int y) 
+    {
         this.y = y;
     }
 
-    public Speler getSpeler() {
+    public Speler getSpeler() 
+    {
         return speler;
     }
 
-    public void setSpeler(Speler speler) {
+    public void setSpeler(Speler speler)
+    {
         this.speler = speler;
     }
 
 
     //Constructor
-    public Tegel(int x, int y) {
+    public Tegel(int x, int y)
+    {
         this.x = x;
         this.y = y;
         buren = new LinkedList<>();
@@ -138,7 +166,8 @@ public class Tegel {
     }
 
     //Return de naam (maar uit een lijst dus index dus + 1 voor de correcte naam
-    public int getRoomName() {
+    public int getRoomName()
+    {
         return roomName++;
     }
 }
