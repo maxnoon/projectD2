@@ -9,7 +9,10 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import javax.swing.JComponent;
 
-//http://forum.codecall.net/topic/63862-maze-tutorial/
+/*
+ * Author: http://forum.codecall.net/topic/63862-maze-tutorial/
+ */
+
 public class PressListener implements KeyListener {
     
     private JComponent comp;
