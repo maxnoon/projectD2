@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package doolhof;
 
 import java.awt.event.KeyListener;
@@ -9,15 +5,18 @@ import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-//http://forum.codecall.net/topic/63862-maze-tutorial/
+/*
+ * Author: http://forum.codecall.net/topic/63862-maze-tutorial/
+ */
+
 public class Spel {
-        public static void main(String[] args) {        
-        // use JFrame to put the created panel o
+        public static void main(String[] args) {
+        //Maak speler, panel
         Speler speler=new Speler();
         JComponent doolhof=new Doolhof(speler);
         JPanel panel=new JPanel();
         
-        
+        //Maak frame en voeg content toe
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500, 800);
@@ -26,11 +25,11 @@ public class Spel {
         frame.setVisible(true);
         frame.add(panel);
         
+        //start keylistener
         KeyListener listener=new PressListener(doolhof, speler);
         frame.addKeyListener(listener);
         doolhof.addKeyListener(listener);
         frame.validate();
-        frame.repaint();
-            
-    }// end of main
+        frame.repaint();           
+    }
 }
