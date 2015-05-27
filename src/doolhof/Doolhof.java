@@ -66,7 +66,7 @@ public class Doolhof extends JComponent {
             }// end of if
         }// end of while
         tegels[0][0].setSpeler(speler);
-        speler.setLokatie(tegels[0][0]);
+        speler.setLocatie(tegels[0][0]);
         
         Random r = new Random();
     }
