@@ -19,11 +19,12 @@ public class Spel
         JPanel panel=new JPanel();
 
         //Maak frame en voeg content toe
+   
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(500, 800);
+        frame.setSize(440, 460);
         frame.getContentPane().add(doolhof);
-        frame.pack();
+        frame.setTitle("doolhof");
         frame.setVisible(true);
         frame.add(panel);
 
