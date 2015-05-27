@@ -7,8 +7,7 @@ import java.util.ArrayList;
 import java.util.Random;
 import javax.swing.JComponent;
 
-/**
- *
+/*
  * @author http://forum.codecall.net/topic/63862-maze-tutorial/
  */
 public class Doolhof extends JComponent {
