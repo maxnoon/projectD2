@@ -128,8 +128,8 @@ public class Doolhof extends JComponent {
     @Override
     public void paintComponent(Graphics g) 
     {
-        x_cord = 50;
-        y_cord = 50;
+        x_cord = 10;
+        y_cord = 10;
 
 
         // temp variables used for painting
@@ -161,9 +161,10 @@ public class Doolhof extends JComponent {
                 }// end of east if
                 if (tegels[i][j].getSpeler() != null) 
                 {
-                    g.setColor(Color.pink);
+                    g.setColor(Color.red);
                     g.fillRect(x + kamerGrote / 4, y + kamerGrote / 4, kamerGrote / 2, kamerGrote / 2);
-                    
+                    g.setColor(Color.black);
+                    //waarom zit het tekenen van het doolhof gekoppeld aan het tekenen van de speler
                 }//tekent speler
 
                 x += kamerGrote;// change the horizontal
