@@ -1,26 +1,28 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package doolhof;
 
 import java.util.LinkedList;
 import java.util.List;
-//http://forum.codecall.net/topic/63862-maze-tutorial/
-public class Tegel {
-    // represent four muurs
 
+/*
+ * Author: http://forum.codecall.net/topic/63862-maze-tutorial/
+ */
+
+public class Tegel {
+    
+    //Een tegel bestaat uit vier muren
     private Muur muurN, muurE, muurS, muurW; // the muur class will be created next
     private int x, y; // represent the row and column of the maze
     private List<Tegel> buren; // adjacency list using linked list
     private int roomName; // for this the room will be a number
     private Speler speler;
     private Tegel tegelN, tegelE, tegelS, tegelW;
+    private Tegel prev; // last room pointer
+    
+    //Getter / Setter
     public void setRoomName(int roomName) {
         this.roomName = roomName;
     }
-    private Tegel prev; // last room pointer
-
+    
     public List<Tegel> getBuren() {
         return buren;
     }
@@ -126,17 +128,17 @@ public class Tegel {
     }
 
 
-    // now we code the constructer 
+    //Constructor
     public Tegel(int x, int y) {
-        this.x = x;// row
-        this.y = y;// column
+        this.x = x;
+        this.y = y;
         buren = new LinkedList<>();
-        prev = null;// we have not progressed, so prev is nothing
-        roomName = 0;// we will use the concept of arrays start 0
-    }// end of constructor
+        prev = null; //prev is null want er is nog niks veranderd dus er is geen prev
+        roomName = 0; //array start 0
+    }
 
-    // we have to increment the room name so lets do it
+    //Return de naam (maar uit een lijst dus index dus + 1 voor de correcte naam
     public int getRoomName() {
         return roomName++;
-    }// end of getRoomName()
+    }
 }
